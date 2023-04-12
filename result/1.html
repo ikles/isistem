@@ -60,7 +60,9 @@
                 Кампания ООО «Инженерные системы» предоставляет полный комплекс услуг по проектированию, монтажу, пусконаладке и сервисному обслуживанию внутренних инженерных систем под ключ по России. Работаем на совесть,
                 самостоятельно решаем возникшие трудности и честно несем ответственность перед заказчиком за результат от первого звонка и до самой сдачи объекта.
               </p>
-              <a href="" class="btn-o sabout__btn">Презентация</a>
+              <p class="p">
+                <a href="" class="btn-o sabout__btn">Презентация</a>
+              </p>
             </div>
             <div class="sabout__к">
               <div class="sabout__img-w"><img src="img/sabout-1.jpg" class="sabout__img" /></div>
@@ -115,13 +117,19 @@
             <div class="calcform__l">
               <div class="calcform__title">Рассчитать стоимость проекта</div>
               <div class="calcform__form-row">
-                <div class="calcform__col"><input class="input-text" type="text" placeholder="Ваше имя" /></div>
-                <div class="calcform__col"><input class="input-text" type="text" placeholder="+7 (999) 999 99 99" /></div>
-                <div class="calcform__col"><a href="" class="calcform__btn">Оставить заявку</a></div>
+                <div class="calcform__col">
+                  <input class="input-text" type="text" placeholder="Ваше имя" />
+                </div>
+                <div class="calcform__col">
+                  <input class="input-text input-phone" type="text" placeholder="+7 (999) 999 99 99" />
+                </div>
+                <div class="calcform__col">
+                  <button class="calcform__btn">Оставить заявку</button>
+                </div>
               </div>
               <label class="calcform__label">
+                <input type="checkbox" checked>                
                 <span class="calcform__label-span"></span>
-
                 <div class="calcform__checkbox-txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="" class="calcform__checkbox-link">политикой конфиденциальности</a></div>
               </label>
             </div>
@@ -140,7 +148,7 @@
                       Завод «bella»<br />
                       7 корпус — 10000 м2
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+                    <span class="ourprojects__arrow"></span>
                   </div>
                   <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
                 </div>
@@ -155,9 +163,9 @@
                       МФК<br />
                       «Калина»
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+                    <span class="ourprojects__arrow"></span>
                   </div>
-                  <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+                  <img src="img/ourprojects-2.jpg" class="ourprojects__img" />
                 </div>
                 <div class="ourprojects__geo">г. Тверь, просп. Калинина 17, стр.1</div>
               </a>
@@ -170,9 +178,13 @@
                       Автосалон<br />
                       Mazda
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+
+
+                    
+
+                    <span class="ourprojects__arrow"></span>
                   </div>
-                  <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+                  <img src="img/ourprojects-3.jpg" class="ourprojects__img" />
                 </div>
                 <div class="ourprojects__geo">г. Тверь, Московское шоссе 1, корп. 2</div>
               </a>
@@ -185,9 +197,9 @@
                       торговый центр<br />
                       Рубин
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+                    <span class="ourprojects__arrow"></span>
                   </div>
-                  <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+                  <img src="img/ourprojects-4.jpg" class="ourprojects__img" />
                 </div>
                 <div class="ourprojects__geo">г. Тверь, просп. Калинина 15, стр.1</div>
               </a>
@@ -200,9 +212,9 @@
                       Автосалон<br />
                       toyota
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+                    <span class="ourprojects__arrow"></span>
                   </div>
-                  <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+                  <img src="img/ourprojects-5.jpg" class="ourprojects__img" />
                 </div>
                 <div class="ourprojects__geo">Г. Тверь, Московское ш., 1, корп. 1</div>
               </a>
@@ -215,9 +227,9 @@
                       Фитнес клуб<br />
                       «F3 Formula»
                     </span>
-                    <img src="img/arr-round-wh.svg" class="ourprojects__arrow" />
+                    <span class="ourprojects__arrow"></span>
                   </div>
-                  <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+                  <img src="img/ourprojects-6.jpg" class="ourprojects__img" />
                 </div>
                 <div class="ourprojects__geo">Г. Тверь, просп. Николая Корыткова, 28В</div>
               </a>
@@ -236,11 +248,12 @@
   </div>
   <!--wrapper-->
   <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
-<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
-  <script async src="js/placemark.js"></script>  
+<!-- <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+  <script async src="js/placemark.js"></script>   -->
   <script src="js/nouislider.js"></script>
   <script src="js/wNumb.min.js"></script>
   <script src="js/select2.min.js"></script>

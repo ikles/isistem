@@ -19,6 +19,9 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  //$('.input-phone').mask("+7 (999) 999-99-99");
+
+
 
 
 //levels menu

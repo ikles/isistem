@@ -697,30 +697,31 @@ body.touch .sub-sub-menu__list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   margin-bottom: 30px; }
-
-.h2-before {
-  background: linear-gradient(#42aa75 0%, #42ab75 0.01%, #1c2467 100%);
-  width: 6px;
-  height: 48px;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: absolute;
-  left: -8px;
-  top: 0px; }
+  .h2:before {
+    content: "";
+    display: block;
+    background: linear-gradient(#42aa75 0%, #42ab75 0.01%, #1c2467 100%);
+    width: 6px;
+    height: 48px;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 10px; }
 
 .p {
   font-size: 20px;
   line-height: 1.3;
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  padding-left: 16px;
+  margin-bottom: 0; }
+  .p:not(:last-child) {
+    margin-bottom: 15px; }
 
-.btn-o.sabout__btn {
+.btn-o {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: 30px;
   padding-right: 26px;
   background-image: url("../img/arr-green.svg");
   background-repeat: no-repeat;
@@ -730,6 +731,9 @@ body.touch .sub-sub-menu__list.open {
   line-height: 1.3;
   text-transform: uppercase;
   color: #42ab75; }
+
+.sabout__btn {
+  margin-top: 15px; }
 
 .sabout__к {
   width: 50%;
@@ -833,9 +837,9 @@ body.touch .sub-sub-menu__list.open {
   margin-bottom: 20px; }
 
 .input-text {
+  width: 100%;
+  border: none;
   height: 48px;
-  left: 331.28px;
-  top: 2398.35px;
   background: #f1f1f1;
   border-radius: 6px;
   padding-left: 14px;
@@ -845,6 +849,7 @@ body.touch .sub-sub-menu__list.open {
   color: #a8a8a8; }
 
 .calcform__btn {
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -871,17 +876,21 @@ body.touch .sub-sub-menu__list.open {
   display: flex;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
-
-.calcform__label-span {
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  background: url("../img/check.svg") center no-repeat white;
-  border-radius: 6px;
-  width: 24px;
-  height: 24px;
-  margin-right: 15px; }
+          align-items: flex-start;
+  cursor: pointer; }
+  .calcform__label input[type="checkbox"] {
+    display: none; }
+    .calcform__label input[type="checkbox"] + span {
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      background-color: #FFF;
+      border-radius: 6px;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px; }
+    .calcform__label input[type="checkbox"]:checked + span {
+      background: url("../img/check.svg") center no-repeat white; }
 
 .calcform__checkbox-txt {
   font-style: italic;
@@ -910,16 +919,33 @@ body.touch .sub-sub-menu__list.open {
 .ourprojects__col {
   padding-left: 10px;
   padding-right: 10px;
-  width: 33.333%; }
+  width: 33.333%;
+  margin-bottom: 50px; }
 
 .ourprojects__item {
   display: block; }
+  .ourprojects__item:hover {
+    text-decoration: none; }
+    .ourprojects__item:hover .ourprojects__img-w:before {
+      height: 200px; }
+    .ourprojects__item:hover .ourprojects__arrow {
+      background: url("../img/arr-round-bl.svg") no-repeat center; }
 
 .ourprojects__img-w {
   height: 400px;
   position: relative;
   border-radius: 30px;
   overflow: hidden; }
+  .ourprojects__img-w:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, #42AB75 -2.51%, rgba(28, 36, 103, 0) 100%);
+    transition: 0.5s; }
 
 .ourprojects__action {
   display: -webkit-flex;
@@ -946,10 +972,14 @@ body.touch .sub-sub-menu__list.open {
   color: white; }
 
 .ourprojects__arrow {
+  display: block;
   margin-left: 15px;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
+          flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  background: url("../img/arr-round-wh.svg") no-repeat center; }
 
 .ourprojects__img {
   object-fit: cover;
