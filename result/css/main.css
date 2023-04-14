@@ -254,16 +254,72 @@ img {
 .swiper-button:focus {
   outline: none; }
 
+@media only screen and (max-width: 1415px) {
+  .contain {
+    max-width: 1170px; }
+  .head__logo {
+    width: 212px; }
+  .head__menu > ul > li:not(:last-child) {
+    margin-right: 61px; }
+  .hero__title {
+    font-size: 52px; }
+  .sadvantages__l {
+    width: 40%;
+    padding-right: 80px; }
+  .sadvantages__r {
+    width: 60%; }
+  .hero {
+    margin-bottom: 100px; }
+  .scheme {
+    padding-top: 100px; }
+  .calcform-2,
+  .scheme,
+  .ourprojects,
+  .sabout,
+  .sadvantages,
+  .calcform {
+    padding-bottom: 100px; }
+  .h2 {
+    font-size: 44px; }
+  .ourprojects__img-w {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1; }
+  .services__l {
+    width: 50%;
+    aspect-ratio: 3 / 3.5; }
+    .services__l img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+  .services__title {
+    font-size: 21px; }
+  .services__r {
+    padding: 92px 20px 10px 20px; }
+  .scheme__title {
+    font-size: 21px; }
+  .scheme__cont {
+    font-size: 18px; }
+  .calcform-2__title {
+    font-size: 40px; }
+  .footer__logo {
+    width: 252px; }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px; }
+  .col-25 {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
 @media only screen and (max-width: 1199px) {
   .contain {
     max-width: 970px; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
   .contain {
     max-width: 750px; } }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .contain {
     max-width: 600px; } }
@@ -272,7 +328,7 @@ img {
   .contain {
     max-width: 530px; } }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 575px) {
   .contain {
     width: 100%;
     max-width: 100%;
@@ -522,7 +578,7 @@ body.touch .sub-sub-menu__list.open {
   padding-bottom: 15px;
   background-color: #F6F6F6;
   position: relative;
-  z-index: 2; }
+  z-index: 4; }
 
 .head__row {
   display: -webkit-flex;
@@ -583,7 +639,6 @@ body.touch .sub-sub-menu__list.open {
   padding-top: 20px;
   position: absolute;
   left: 0;
-  display: block;
   display: none; }
 
 .head__menu ul ul {
@@ -731,10 +786,14 @@ body.touch .sub-sub-menu__list.open {
   padding-top: 136px;
   margin-bottom: 149px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .hero > img {
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     max-width: 1920px; }
 
@@ -758,7 +817,8 @@ body.touch .sub-sub-menu__list.open {
   top: 65px;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  z-index: 2; }
 
 .hero__texts {
   max-width: 970px;
@@ -1022,8 +1082,10 @@ body.touch .sub-sub-menu__list.open {
   overflow: hidden; }
 
 .sabout__img-w {
-  border-radius: 30px;
   overflow: hidden; }
+  .sabout__img-w img {
+    border-radius: 30px;
+    width: 100%; }
 
 .sadvantages {
   padding-bottom: 150px; }
@@ -1287,7 +1349,8 @@ body.touch .sub-sub-menu__list.open {
   line-height: 1.7;
   font-size: 18px;
   margin-bottom: 0px;
-  margin-top: 14px; }
+  margin-top: 14px;
+  color: #282639; }
 
 .ourprojects__btn {
   padding: 0 19px; }
@@ -1522,7 +1585,10 @@ body.touch .sub-sub-menu__list.open {
   display: inline-flex;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
+          flex: 0 0 auto;
+  width: 282px; }
+  .footer__logo img {
+    max-width: 100%; }
 
 .footer__col-1 {
   margin-top: -40px; }
@@ -1699,6 +1765,98 @@ body.touch .sub-sub-menu__list.open {
   height: 190px;
   border-radius: 30px;
   overflow: hidden; }
+
+@media only screen and (max-width: 1415px) {
+  .contain {
+    max-width: 1170px; }
+  .head__logo {
+    width: 212px; }
+  .head__menu > ul > li:not(:last-child) {
+    margin-right: 61px; }
+  .hero__title {
+    font-size: 52px; }
+  .sadvantages__l {
+    width: 40%;
+    padding-right: 80px; }
+  .sadvantages__r {
+    width: 60%; }
+  .hero {
+    margin-bottom: 100px; }
+  .scheme {
+    padding-top: 100px; }
+  .calcform-2,
+  .scheme,
+  .ourprojects,
+  .sabout,
+  .sadvantages,
+  .calcform {
+    padding-bottom: 100px; }
+  .h2 {
+    font-size: 44px; }
+  .ourprojects__img-w {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1; }
+  .services__l {
+    width: 50%;
+    aspect-ratio: 3 / 3.5; }
+    .services__l img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+  .services__title {
+    font-size: 21px; }
+  .services__r {
+    padding: 92px 20px 10px 20px; }
+  .scheme__title {
+    font-size: 21px; }
+  .scheme__cont {
+    font-size: 18px; }
+  .calcform-2__title {
+    font-size: 40px; }
+  .footer__logo {
+    width: 252px; }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px; }
+  .col-25 {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media only screen and (max-width: 1199px) {
+  .contain {
+    max-width: 970px; } }
+
+@media only screen and (max-width: 991px) {
+  .contain {
+    max-width: 750px; } }
+
+@media only screen and (max-width: 767px) {
+  .contain {
+    max-width: 600px; } }
+
+@media only screen and (max-width: 640px) {
+  .contain {
+    max-width: 530px; } }
+
+@media only screen and (max-width: 575px) {
+  .contain {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media only screen and (max-width: 320px) {
+  body, body > * {
+    width: auto;
+    min-width: 320px; } }
+
+@media only screen and (min-width: 1080px) {
+  .main-mnu {
+    display: block !important; }
+  .hidden-mnu {
+    display: none; } }
 
 .completed-slde-dots {
   position: absolute;
