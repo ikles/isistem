@@ -544,6 +544,20 @@ body.touch .sub-sub-menu__list.open {
   .head__logo img {
     max-width: 100%; }
 
+.head__cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .head__col {
   margin-left: 0px; }
 
@@ -2122,7 +2136,79 @@ body.touch .sub-sub-menu__list.open {
     margin-right: 0;
     margin-bottom: 20px; }
   .head__col {
-    width: 100%; } }
+    width: 100%; }
+  .head__cols {
+    display: block;
+    display: none;
+    padding-top: 70px; }
+  .head__logo {
+    width: 155px;
+    margin-bottom: 0;
+    margin-right: 0; }
+    .head__logo img {
+      max-width: 100%; }
+  .hidden-mnu {
+    display: block;
+    position: relative;
+    z-index: 11;
+    margin-left: auto; }
+  .toggle-mnu {
+    display: block;
+    display: block;
+    width: 36px;
+    height: 28px; }
+  .toggle-mnu:focus {
+    outline: none; }
+  .toggle-mnu span {
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 36px;
+    height: 3px;
+    background: #42AB75; }
+  .toggle-mnu span:after, .toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    background: #42AB75;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 1px; }
+  .toggle-mnu span:after {
+    top: 13px; }
+  .toggle-mnu span:before {
+    top: 26px; }
+  .toggle-mnu span {
+    bottom: 0px; }
+  .toggle-mnu.on span {
+    background-color: transparent; }
+  .toggle-mnu.on span:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+        -ms-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+    top: 4px; }
+  .toggle-mnu.on span:after {
+    -webkit-transform: rotate(-45deg) translate(8px, -9px);
+        -ms-transform: rotate(-45deg) translate(8px, -9px);
+            transform: rotate(-45deg) translate(8px, -9px);
+    top: 23px; }
+  .toggle-mnu.on + #menu {
+    opacity: 1;
+    visibility: visible; }
+  .head.h100 {
+    height: 100vh;
+    overflow: auto; } }
+
+@media (min-width: 768px) {
+  .toggle-mnu {
+    display: none; }
+  .top-mnu {
+    display: block; } }
 
 .completed-slde-dots {
   position: absolute;

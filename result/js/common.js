@@ -2,21 +2,22 @@ jQuery(document).ready(function( $ ) {
 
   $(".toggle-mnu").click(function() {
     $(this).toggleClass("on");
-    $(".top-mnu").slideToggle();
+    $('.head').toggleClass("h100");
+    $(".head__cols").slideToggle();
     return false;
   });
 
   $('body').click(function () {
     if( $(".toggle-mnu").hasClass("on") ){
       $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
+      $(".head__cols").slideUp();
     }
     $('.hero__plus').removeClass('active');
     $('.plus__item').removeClass('show');    
   });
 
 
-  $(".top-mnu, .hero__plus, .has-burger, .plus__item").click(function (e) {
+  $(".top-mnu, .hero__plus, .has-burger, .plus__item, .head").click(function (e) {
     e.stopPropagation();
   });
 
