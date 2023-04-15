@@ -2072,6 +2072,12 @@ body {
     height: 100vh;
     overflow: auto;
   }
+  .hero__img {
+    width: 1173px;
+  }
+  .hero__img-w {    
+    transform: translate(197px, 0%);
+  }
 }//767
 
 @media (min-width: 768px) {

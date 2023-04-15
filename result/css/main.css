@@ -2202,7 +2202,13 @@ body.touch .sub-sub-menu__list.open {
     visibility: visible; }
   .head.h100 {
     height: 100vh;
-    overflow: auto; } }
+    overflow: auto; }
+  .hero__img {
+    width: 1173px; }
+  .hero__img-w {
+    -webkit-transform: translate(197px, 0%);
+        -ms-transform: translate(197px, 0%);
+            transform: translate(197px, 0%); } }
 
 @media (min-width: 768px) {
   .toggle-mnu {

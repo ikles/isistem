@@ -15,7 +15,6 @@
 <![endif]-->
 </head>
 <body>
-
   <div class="wrapper">
     @@include('var/_header.html')    
     <main class="main">     
@@ -34,402 +33,408 @@
           </div>
         </div>
         <div class="hero__img-w">
-          <img src="img/hero-bg.png" class="hero__img" />        
+
+          <picture>
+            <source srcset="img/hero-bg.png" type="image/jpeg" media="(min-width:768px)" /> <!--меньше этого будет другая-->
+            <source srcset="img/hero-mob-bg.png" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->
+            <img src="img/hero-bg.png" class="hero__img" />
+          </picture>
+
           <div class="hero__plus plus-1">
             <div class="plus__item plus__item--1" data-da=".hero__contain,991,1">
-            <span class="plus__item-close"></span>
+              <span class="plus__item-close"></span>
               <div class="plus__row">
-              <div class="plus__title">Внутренние освещение</div>
+                <div class="plus__title">Внутренние освещение</div>
                 <div class="plus__l">
+                  <p class="plus__text">
+                    ООО «ИНЖЕНЕРНЫЙ ЦЕНТР» выполняет проектирование и монтаж внутреннего освещения в торговых центрах, фитнес-клубах, промышленных и жилых объектах. Профессиональный подход к реализации современных и надежных инженерных систем.
+                  </p>
+                  <a href="#plus" class="plus__btn btn-o">Подробнее</a>
+                </div>
+                <div class="plus__r">
+                  <img src="img/plusitem-2.jpg">
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="hero__plus plus-2">
+            <div class="plus__item plus__item--2" data-da=".hero__contain,991,1">
+              <span class="plus__item-close"></span>
+              <div class="plus__row">
+                <div class="plus__title">Щитовое оборудование</div>
+                <div class="plus__l">
+                  <p class="plus__text">
+                    Мы осуществляем: Сборку и монтаж щитового оборудования, монтаж электрощитов, сборку электрощитов и шкафов управления, производство электрощитового оборудования, сборку электрических щитов управления, щитов автоматики, распределительных щитов, продажу кабеля.
+                  </p>
+                  <a href="#plus" class="plus__btn btn-o">Подробнее</a>
+                </div>
+                <div class="plus__r">
+                  <img src="img/plusitem-3.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__plus plus-3">
+           <div class="plus__item plus__item--3" data-da=".hero__contain,991,1">
+            <span class="plus__item-close"></span>
+            <div class="plus__row">
+              <div class="plus__title">Наружное освещение</div>
+              <div class="plus__l">
                 <p class="plus__text">
-                  ООО «ИНЖЕНЕРНЫЙ ЦЕНТР» выполняет проектирование и монтаж внутреннего освещения в торговых центрах, фитнес-клубах, промышленных и жилых объектах. Профессиональный подход к реализации современных и надежных инженерных систем.
+                  Компания ООО «ИНЖЕНЕРНЫЙ ЦЕНТР» предлагает заказать полный комплекс услуг по монтажу уличного и внутреннего освещения. Своевременную сдачу объекта в соответствии с оговоренными при заключении договора сроками гарантируем. Звоните, наши специалисты предоставят более подробную информацию по всем возникшим вопросам.
                 </p>
                 <a href="#plus" class="plus__btn btn-o">Подробнее</a>
               </div>
               <div class="plus__r">
-                <img src="img/plusitem-2.jpg">
+                <img src="img/plusitem-4.jpg">
               </div>
             </div>
-          </div>  
+          </div>
         </div>
-        <div class="hero__plus plus-2">
-          <div class="plus__item plus__item--2" data-da=".hero__contain,991,1">
+        <div class="hero__plus plus-4">
+          <div class="plus__item plus__item--4" data-da=".hero__contain,991,1">
             <span class="plus__item-close"></span>
             <div class="plus__row">
-            <div class="plus__title">Щитовое оборудование</div>
+              <div class="plus__title">Молниезащита и заземление</div>
               <div class="plus__l">
-              <p class="plus__text">
-                Мы осуществляем: Сборку и монтаж щитового оборудования, монтаж электрощитов, сборку электрощитов и шкафов управления, производство электрощитового оборудования, сборку электрических щитов управления, щитов автоматики, распределительных щитов, продажу кабеля.
-              </p>
-              <a href="#plus" class="plus__btn btn-o">Подробнее</a>
-            </div>
-            <div class="plus__r">
-              <img src="img/plusitem-3.jpg">
+                <p class="plus__text">Молниезащита промышленных объектов. Комплексное обеспечение объектов любого назначения системами молниезащиты и заземление. ... Надежные системы молниезащиты и заземления от компании ООО «ИНЖЕНЕРНЫЙ ЦЕНТР»</p>
+                <a href="#plus" class="plus__btn btn-o">Подробнее</a>
+              </div>
+              <div class="plus__r">
+                <img src="img/plusitem-1.jpg">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero__plus plus-3">
-       <div class="plus__item plus__item--3" data-da=".hero__contain,991,1">
-        <span class="plus__item-close"></span>
-        <div class="plus__row">
-        <div class="plus__title">Наружное освещение</div>
-          <div class="plus__l">
-          <p class="plus__text">
-            Компания ООО «ИНЖЕНЕРНЫЙ ЦЕНТР» предлагает заказать полный комплекс услуг по монтажу уличного и внутреннего освещения. Своевременную сдачу объекта в соответствии с оговоренными при заключении договора сроками гарантируем. Звоните, наши специалисты предоставят более подробную информацию по всем возникшим вопросам.
-          </p>
-          <a href="#plus" class="plus__btn btn-o">Подробнее</a>
+      <div class="hero__contain-w">
+        <div class="hero__contain"></div>
+      </div>
+    </section>
+    <section class="sabout">
+      <div class="contain">
+        <div class="sabout__row">
+          <div class="sabout__l">
+            <div class="h2">
+              <div class="h2-before"></div>
+              О нас
+            </div>
+            <p class="p">
+              Кампания ООО «Инженерные системы» предоставляет полный комплекс услуг по проектированию, монтажу, пусконаладке и сервисному обслуживанию внутренних инженерных систем под ключ по России. <br>
+              Работаем на совесть,
+              самостоятельно решаем возникшие трудности и честно несем ответственность перед заказчиком за результат от первого звонка и до самой сдачи объекта.
+            </p>
+            <p class="p">
+              <a href="" class="btn-o sabout__btn">Презентация</a>
+            </p>
+          </div>
+          <div class="sabout__r">
+            <div class="sabout__img-w"><img src="img/sabout-1.jpg" class="sabout__img" /></div>
+          </div>
         </div>
-        <div class="plus__r">
-          <img src="img/plusitem-4.jpg">
-        </div>
       </div>
-    </div>
-  </div>
-  <div class="hero__plus plus-4">
-    <div class="plus__item plus__item--4" data-da=".hero__contain,991,1">
-    <span class="plus__item-close"></span>
-    <div class="plus__row">
-    <div class="plus__title">Молниезащита и заземление</div>
-      <div class="plus__l">
-      <p class="plus__text">Молниезащита промышленных объектов. Комплексное обеспечение объектов любого назначения системами молниезащиты и заземление. ... Надежные системы молниезащиты и заземления от компании ООО «ИНЖЕНЕРНЫЙ ЦЕНТР»</p>
-      <a href="#plus" class="plus__btn btn-o">Подробнее</a>
-    </div>
-    <div class="plus__r">
-      <img src="img/plusitem-1.jpg">
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="hero__contain-w">
-  <div class="hero__contain"></div>
-</div>
-</section>
-<section class="sabout">
-  <div class="contain">
-    <div class="sabout__row">
-      <div class="sabout__l">
-        <div class="h2">
-          <div class="h2-before"></div>
-          О нас
-        </div>
-        <p class="p">
-          Кампания ООО «Инженерные системы» предоставляет полный комплекс услуг по проектированию, монтажу, пусконаладке и сервисному обслуживанию внутренних инженерных систем под ключ по России. <br>
-          Работаем на совесть,
-          самостоятельно решаем возникшие трудности и честно несем ответственность перед заказчиком за результат от первого звонка и до самой сдачи объекта.
-        </p>
-        <p class="p">
-          <a href="" class="btn-o sabout__btn">Презентация</a>
-        </p>
-      </div>
-      <div class="sabout__r">
-        <div class="sabout__img-w"><img src="img/sabout-1.jpg" class="sabout__img" /></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="sadvantages">
-  <div class="contain">
-    <div class="h2">Наши преимущества</div>
-    <div class="sadvantages__row">
-      <div class="sadvantages__l">
-        <p class="p">
-          В любых коммерческих помещениях важно обеспечить комфортные условия работы сотрудников и элегантный дизайн, располагающий к себе клиентов. Наши специалисты готовы решить вопросы, связанные с ремонтом, отделкой и
-          инженерией помещений.
-        </p>
-      </div>
-      <div class="sadvantages__r">
+    </section>
+    <section class="sadvantages">
+      <div class="contain">
+        <div class="h2">Наши преимущества</div>
         <div class="sadvantages__row">
-          <div class="sadvantages__col">
-            <div class="sadvantages__item">
-              <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
-              <div class="sadvantages__text">Все виды работ</div>
-            </div>
+          <div class="sadvantages__l">
+            <p class="p">
+              В любых коммерческих помещениях важно обеспечить комфортные условия работы сотрудников и элегантный дизайн, располагающий к себе клиентов. Наши специалисты готовы решить вопросы, связанные с ремонтом, отделкой и
+              инженерией помещений.
+            </p>
           </div>
-          <div class="sadvantages__col">
-            <div class="sadvantages__item">
-              <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
-              <div class="sadvantages__text">
-                Сами проектируем<br />
-                и сами монтируем
+          <div class="sadvantages__r">
+            <div class="sadvantages__row">
+              <div class="sadvantages__col">
+                <div class="sadvantages__item">
+                  <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
+                  <div class="sadvantages__text">Все виды работ</div>
+                </div>
+              </div>
+              <div class="sadvantages__col">
+                <div class="sadvantages__item">
+                  <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
+                  <div class="sadvantages__text">
+                    Сами проектируем<br />
+                    и сами монтируем
+                  </div>
+                </div>
+              </div>
+              <div class="sadvantages__col">
+                <div class="sadvantages__item">
+                  <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
+                  <div class="sadvantages__text">
+                    Сжатые сроки, <br />
+                    приемлемые цены
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="sadvantages__col">
-            <div class="sadvantages__item">
-              <div class="sadvantages__img-w"><img src="img/sadvantages-1.svg" /></div>
-              <div class="sadvantages__text">
-                Сжатые сроки, <br />
-                приемлемые цены
+        </div>
+      </div>
+    </section>
+    <section class="calcform">
+      <div class="contain">
+        <form class="calcform__form">
+          <div class="calcform__l">
+            <div class="calcform__title">Рассчитать стоимость проекта</div>
+            <div class="calcform__form-row">
+              <div class="calcform__col">
+                <input class="input-text" type="text" placeholder="Ваше имя" required />
+              </div>
+              <div class="calcform__col">
+                <input class="input-text input-phone" type="text" placeholder="+7 (999) 999 99 99" required />
+              </div>
+              <div class="calcform__col">
+                <button class="calcform__btn">Оставить заявку</button>
+              </div>
+            </div>
+            <label class="calcform__label">
+              <input type="checkbox" checked>                
+              <span class="calcform__label-span"></span>
+              <div class="calcform__checkbox-txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="" class="calcform__checkbox-link">политикой конфиденциальности</a></div>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="ourprojects">
+      <div class="contain">
+        <div class="h2">Наши реализованные проекты</div>
+        <div class="ourprojects__row">
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="00">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    Завод «bella»<br />
+                    7 корпус — 10000 м2
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">г. Егорьевск, ул. Промышленная 9</div>
+            </a>
+          </div>
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="100">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    МФК<br />
+                    «Калина»
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-2.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">г. Тверь, просп. Калинина 17, стр.1</div>
+            </a>
+          </div>
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="200">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    Автосалон<br />
+                    Mazda
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-3.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">г. Тверь, Московское шоссе 1, корп. 2</div>
+            </a>
+          </div>
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="00">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    торговый центр<br />
+                    Рубин
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-4.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">г. Тверь, просп. Калинина 15, стр.1</div>
+            </a>
+          </div>
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="100">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    Автосалон<br />
+                    toyota
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-5.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">Г. Тверь, Московское ш., 1, корп. 1</div>
+            </a>
+          </div>
+          <div class="ourprojects__col">
+            <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="200">
+              <div class="ourprojects__img-w">
+                <div class="ourprojects__action">
+                  <span class="ourprojects__name">
+                    Фитнес клуб<br />
+                    «F3 Formula»
+                  </span>
+                  <span class="ourprojects__arrow"></span>
+                </div>
+                <img src="img/ourprojects-6.jpg" class="ourprojects__img" />
+              </div>
+              <div class="ourprojects__geo">Г. Тверь, просп. Николая Корыткова, 28В</div>
+            </a>
+          </div>
+        </div>
+        <div class="ourprojects__btn-w">
+          <a href="" class="ourprojects__btn btn"><span>Наши работы</span> <i></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="contain">
+        <div class="h2">Наши услуги</div>
+        <div class="services__txt">
+          Мы экономим время наших клиентов – все отделочные и<br />
+          ремонтные работы выполняются в максимально короткие сроки с<br />
+          высочайшим качеством.
+        </div>
+        <div class="services__row">
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="00">
+              <div class="services__l"><img src="img/services-1.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">
+                  Монтаж<br>
+                  систем<br>
+                  электроснабжения
+                </div>
+                <a href="" class="services__btn">Узнать стоимость</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="100">
+              <div class="services__l"><img src="img/services-2.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">Ремонт <br> и отделка<br> помещений</div>
+                <a href="" class="services__btn">Узнать стоимость</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="00">
+              <div class="services__l"><img src="img/services-3.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">Монтаж<br> внутреннего<br> освещение</div>
+                <a href="" class="services__btn">Узнать стоимость</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="100">
+              <div class="services__l"><img src="img/services-4.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">Монтаж<br> наружного<br> освещения</div>
+                <a href="" class="services__btn">Узнать стоимость</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="00">
+              <div class="services__l"><img src="img/services-5.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">Щитовое<br> оборудование<br> кабельные системы</div>
+                <a href="" class="services__btn">Узнать стоимость</a>
+              </div>
+            </div>
+          </div>
+          <div class="services__col">
+            <div class="services__item" data-aos="fade-right" data-aos-delay="100">
+              <div class="services__l"><img src="img/services-6.jpg" /></div>
+              <div class="services__r">
+                <div class="services__title">Молниезащита<br> и заземление<br> здания</div>
+                <a href="" class="services__btn">Узнать стоимость</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="calcform">
-  <div class="contain">
-    <form class="calcform__form">
-      <div class="calcform__l">
-        <div class="calcform__title">Рассчитать стоимость проекта</div>
-        <div class="calcform__form-row">
-          <div class="calcform__col">
-            <input class="input-text" type="text" placeholder="Ваше имя" required />
-          </div>
-          <div class="calcform__col">
-            <input class="input-text input-phone" type="text" placeholder="+7 (999) 999 99 99" required />
-          </div>
-          <div class="calcform__col">
-            <button class="calcform__btn">Оставить заявку</button>
-          </div>
+    </section>
+    <section class="scheme">
+      <div class="contain">
+        <div class="h2">Схема нашей работы</div>          
+        <div class="scheme__txt">
+          Качественно выполненная работа в срок – это гарантия нашей<br />
+          репутации, за которой мы тщательно следим!
         </div>
-        <label class="calcform__label">
-          <input type="checkbox" checked>                
-          <span class="calcform__label-span"></span>
-          <div class="calcform__checkbox-txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="" class="calcform__checkbox-link">политикой конфиденциальности</a></div>
-        </label>
-      </div>
-    </form>
-  </div>
-</section>
-<section class="ourprojects">
-  <div class="contain">
-    <div class="h2">Наши реализованные проекты</div>
-    <div class="ourprojects__row">
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="00">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                Завод «bella»<br />
-                7 корпус — 10000 м2
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-1.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">г. Егорьевск, ул. Промышленная 9</div>
-        </a>
-      </div>
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="100">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                МФК<br />
-                «Калина»
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-2.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">г. Тверь, просп. Калинина 17, стр.1</div>
-        </a>
-      </div>
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="200">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                Автосалон<br />
-                Mazda
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-3.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">г. Тверь, Московское шоссе 1, корп. 2</div>
-        </a>
-      </div>
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="00">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                торговый центр<br />
-                Рубин
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-4.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">г. Тверь, просп. Калинина 15, стр.1</div>
-        </a>
-      </div>
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="100">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                Автосалон<br />
-                toyota
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-5.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">Г. Тверь, Московское ш., 1, корп. 1</div>
-        </a>
-      </div>
-      <div class="ourprojects__col">
-        <a href="" class="ourprojects__item" data-aos="fade-right" data-aos-delay="200">
-          <div class="ourprojects__img-w">
-            <div class="ourprojects__action">
-              <span class="ourprojects__name">
-                Фитнес клуб<br />
-                «F3 Formula»
-              </span>
-              <span class="ourprojects__arrow"></span>
-            </div>
-            <img src="img/ourprojects-6.jpg" class="ourprojects__img" />
-          </div>
-          <div class="ourprojects__geo">Г. Тверь, просп. Николая Корыткова, 28В</div>
-        </a>
-      </div>
-    </div>
-    <div class="ourprojects__btn-w">
-      <a href="" class="ourprojects__btn btn"><span>Наши работы</span> <i></i></a>
-    </div>
-  </div>
-</section>
-<section class="services">
-  <div class="contain">
-    <div class="h2">Наши услуги</div>
-    <div class="services__txt">
-      Мы экономим время наших клиентов – все отделочные и<br />
-      ремонтные работы выполняются в максимально короткие сроки с<br />
-      высочайшим качеством.
-    </div>
-    <div class="services__row">
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="00">
-          <div class="services__l"><img src="img/services-1.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">
-              Монтаж<br>
-              систем<br>
-              электроснабжения
-            </div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="100">
-          <div class="services__l"><img src="img/services-2.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">Ремонт <br> и отделка<br> помещений</div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="00">
-          <div class="services__l"><img src="img/services-3.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">Монтаж<br> внутреннего<br> освещение</div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="100">
-          <div class="services__l"><img src="img/services-4.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">Монтаж<br> наружного<br> освещения</div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="00">
-          <div class="services__l"><img src="img/services-5.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">Щитовое<br> оборудование<br> кабельные системы</div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-      <div class="services__col">
-        <div class="services__item" data-aos="fade-right" data-aos-delay="100">
-          <div class="services__l"><img src="img/services-6.jpg" /></div>
-          <div class="services__r">
-            <div class="services__title">Молниезащита<br> и заземление<br> здания</div>
-            <a href="" class="services__btn">Узнать стоимость</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="scheme">
-  <div class="contain">
-    <div class="h2">Схема нашей работы</div>          
-    <div class="scheme__txt">
-      Качественно выполненная работа в срок – это гарантия нашей<br />
-      репутации, за которой мы тщательно следим!
-    </div>
-    <div class="scheme__row">
-      <div class="scheme__item">
-        <div class="scheme__signs">
-          <div class="scheme__icon"><img src="img/scheme-1.svg" /></div>
+        <div class="scheme__row">
+          <div class="scheme__item">
+            <div class="scheme__signs">
+              <div class="scheme__icon"><img src="img/scheme-1.svg" /></div>
 
-        </div>
-        <div class="scheme__title"><span>1.</span> Звонок<br> или заявка</div>
-        <div class="scheme__cont">Связываетесь с нами и обсудить детали для будущего проекта</div>
-      </div>
-      <div class="scheme__item">
-        <div class="scheme__signs">
-          <div class="scheme__icon"><img src="img/scheme-2.svg" /></div>
+            </div>
+            <div class="scheme__title"><span>1.</span> Звонок<br> или заявка</div>
+            <div class="scheme__cont">Связываетесь с нами и обсудить детали для будущего проекта</div>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__signs">
+              <div class="scheme__icon"><img src="img/scheme-2.svg" /></div>
 
-        </div>
-        <div class="scheme__title"><span>2.</span> Составление<br> сметы</div>
-        <div class="scheme__cont">Получение исходных данных для составления сметы.</div>
-      </div>
-      <div class="scheme__item">
-        <div class="scheme__signs">
-          <div class="scheme__icon"><img src="img/scheme-3.svg" /></div>
+            </div>
+            <div class="scheme__title"><span>2.</span> Составление<br> сметы</div>
+            <div class="scheme__cont">Получение исходных данных для составления сметы.</div>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__signs">
+              <div class="scheme__icon"><img src="img/scheme-3.svg" /></div>
 
-        </div>
-        <div class="scheme__title"><span>3.</span> Работа<br> на объекте</div>
-        <div class="scheme__cont">Качественно и профессионально выполняем работу на вашем объекте</div>
-      </div>
-      <div class="scheme__item">
-        <div class="scheme__signs">
-          <div class="scheme__icon"><img src="img/scheme-4.svg" /></div>
+            </div>
+            <div class="scheme__title"><span>3.</span> Работа<br> на объекте</div>
+            <div class="scheme__cont">Качественно и профессионально выполняем работу на вашем объекте</div>
+          </div>
+          <div class="scheme__item">
+            <div class="scheme__signs">
+              <div class="scheme__icon"><img src="img/scheme-4.svg" /></div>
 
+            </div>
+            <div class="scheme__title"><span>4.</span> Сдача<br> объекта</div>
+            <div class="scheme__cont">Сдача объекта и гарантия до 5 лет на все виды работ.</div>
+          </div>
         </div>
-        <div class="scheme__title"><span>4.</span> Сдача<br> объекта</div>
-        <div class="scheme__cont">Сдача объекта и гарантия до 5 лет на все виды работ.</div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="calcform-2">
-  <div class="contain">
-    <form class="calcform-2__form">
-      <div class="calcform__w">
-        <div class="calcform-2__title">Рассчитать стоимость проекта</div>
-        <div class="calcform-2__row">                
-          <input class="input-text" type="text" placeholder="Ваше имя" required="">
+    </section>
+    <section class="calcform-2">
+      <div class="contain">
+        <form class="calcform-2__form">
+          <div class="calcform__w">
+            <div class="calcform-2__title">Рассчитать стоимость проекта</div>
+            <div class="calcform-2__row">                
+              <input class="input-text" type="text" placeholder="Ваше имя" required="">
 
-          <input class="input-text input-phone" type="text" placeholder="+7 (999) 999 99 99" required="">                
-          <button class="calcform__btn">Оставить заявку</button>                
-        </div>
-        <label class="calcform__label">
-          <input type="checkbox" checked="">                
-          <span class="calcform__label-span"></span>
-          <div class="calcform__checkbox-txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="" class="calcform__checkbox-link">политикой конфиденциальности</a></div>
-        </label>
+              <input class="input-text input-phone" type="text" placeholder="+7 (999) 999 99 99" required="">                
+              <button class="calcform__btn">Оставить заявку</button>                
+            </div>
+            <label class="calcform__label">
+              <input type="checkbox" checked="">                
+              <span class="calcform__label-span"></span>
+              <div class="calcform__checkbox-txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="" class="calcform__checkbox-link">политикой конфиденциальности</a></div>
+            </label>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</section>
-</main>
-@@include('var/_footer.html')
+    </section>
+  </main>
+  @@include('var/_footer.html')
 
 </div>
 <!--wrapper-->  
