@@ -12,8 +12,7 @@ jQuery(document).ready(function( $ ) {
       $(".top-mnu").fadeOut();
     }
     $('.hero__plus').removeClass('active');
-    $('.plus__item').removeClass('show');
-    $('.head__sub-menu').hide();
+    $('.plus__item').removeClass('show');    
   });
 
 
@@ -53,9 +52,17 @@ jQuery(document).ready(function( $ ) {
   }
 
 
-  $('.touch .burger').click(function () {
-    $('.head__sub-menu').fadeToggle(200);
-  });
+
+  if( $(window).width() > 767 ) {
+    $('.touch .burger').click(function () {
+      $('.head__sub-menu').fadeToggle(200);
+    });
+    $('body').click(function () {    
+      $('.head__sub-menu').hide();
+    });
+  }
+
+
 
 
   $('.hero__plus').click(function () {
@@ -100,8 +107,6 @@ jQuery(document).ready(function( $ ) {
   $(window).resize(function() {
     clickPlusPda();
   });
-
-
 
 
 
