@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Наши услуги</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">     
+      <div class="page">
+        <div class="contain">
+          <ul class="bread__ul">
+            <li><a href="">Главная</a></li>            
+            <li><span>Наши услуги</span></li>
+          </ul>
+          <div class="servs__row">
+            <div class="servs__l">
+              <div class="servs__h2 h2">Наши <br>
+              услуги</div>
+              <div class="servs__txt pl-17">
+                Мы экономим время наших клиентов – все отделочные 
+                и ремонтные работы выполняются в максимально короткие сроки с высочайшим качеством.
+              </div>
+            </div>
+            <div class="servs__r">
+              <div class="servs__items">
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-1.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Монтаж систем электроснабжения</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-2.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Ремонт и отделка помещений</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-3.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Монтаж внутреннего освещение</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-4.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Монтаж наружного освещения</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-5.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Щитовое оборудование кабельные системы</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="servs__col">
+                  <div class="servs__item">
+                    <img src="img/servs-6.jpg" class="servs__img" />
+                    <div class="servs__content">
+                      <div class="servs__title">Молниезащита и заземление здания</div>
+                      <a href="" class="servs__btn btn"><span>Узнать стоимость</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="calcform-2">
+        <div class="contain">
+          @@include('var/_calcform-2.html')
+        </div>
+      </section>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->  
+  @@include('var/_scripts.html')
+</body>
+</html>
+
