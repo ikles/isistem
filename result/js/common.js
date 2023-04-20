@@ -140,10 +140,11 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-
 });*/
 
 /************************************/
+
+
 
 
 
@@ -196,6 +197,21 @@ $('.eye-3').click(function (e) {
       minimumResultsForSearch: -1
     });
   }
+
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: false,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 
 }); //ready
 
