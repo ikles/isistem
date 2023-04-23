@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">     
+      <div class="page">
+        <div class="contain">
+          <ul class="bread__ul">
+            <li><a href="">Главная</a></li>
+            <li><span>Контакты</span></li>
+          </ul>
+        </div>
+        <div class="conts">
+          <div class="contain">
+            <div class="h2">Контакты</div>
+            <div class="conts__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A066489fe7602b1383332d9e250a875d8531a67bff96296c63f10cffb65ccc506&amp;width=100%25&amp;height=820&amp;lang=ru_RU&amp;scroll=true"></script>
+              <div class="conts__row">                
+                <div class="conts__item">
+                  <div class="conts__title">ООО "ИНЖЕНЕРНЫЙ ЦЕНТР"</div>
+                  <div class="conts__col-text">
+                    ИНН: 6952003912<br />
+                    КПП: 695001001<br />
+                    ОГРН: 1156952012106<br />
+                    Адрес: 170006, Тверская обл., Тверь г., Веры Бонч-Бруевич <br> ул., дом 16, помещение 26
+                  </div>
+                </div>                
+                <div class="conts__item">
+                  <a href="" class="conts__phone">+7 (4822) 75-24-01</a>
+                  <div class="conts__cont">
+                    <a href="" class="conts__mail"> i-sistem69@mail.ru</a>
+                    <div class="conts__time"> ПН-ПТ: 09:00 - 18:00</div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    @@include('var/_footer.html')
+
+  </div>
+  <!--wrapper-->  
+  @@include('var/_scripts.html')
+</body>
+</html>
+
