@@ -198,19 +198,30 @@ $('.eye-3').click(function (e) {
     });
   }
 
+/*
+  const options = {
+    Thumbs: {
+      type: "classic",
+    },
+  };*/
+
 
   $('[data-fancybox="gallery"]').fancybox({
     arrows: true,
     infobar: true,
     smallBtn: false,
-    toolbar: true,
+    toolbar: true,    
     iframe : {
       css : {
         width : '950px'
       }
     },    
     slideClass: "myClass",
-    baseClass: "myclass"
+    baseClass: "myclass",
+    thumbs : {
+      autoStart : true,
+      axis      : 'y'
+    }
   });
 
 }); //ready
