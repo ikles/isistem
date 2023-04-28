@@ -4,6 +4,7 @@ jQuery(document).ready(function( $ ) {
     $(this).toggleClass("on");
     $('.head').toggleClass("h100");
     $(".head__cols").slideToggle();
+    $('body').toggleClass('ohi');
     return false;
   });
 
@@ -11,6 +12,7 @@ jQuery(document).ready(function( $ ) {
     if( $(".toggle-mnu").hasClass("on") ){
       $(".toggle-mnu").removeClass("on");
       $(".head__cols").slideUp();
+      $('body').removeClass('ohi');
     }
     $('.hero__plus').removeClass('active');
     $('.plus__item').removeClass('show');    
@@ -169,8 +171,9 @@ $('.eye-3').click(function (e) {
 
   }
 
-  popup('.link', '.modal-overlay_1', '.modal-close_1');
+  popup('.link', '.modal-overlay_1', '.modal-close_1');  
   popup('.link2', '.modal-overlay_2', '.modal-close_2');
+  popup('.modal-1__btn', '.modal-overlay_1', '.modal-close_1');
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {
