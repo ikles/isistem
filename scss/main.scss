@@ -2006,6 +2006,66 @@ body {
   }
 }
 
+.instal__content { 
+
+  ul {
+    margin-bottom: 20px;
+    list-style: outside;
+    list-style: inside;
+    padding-left: 13px;
+    padding-left: 20px;
+    padding-left: 0;
+    li {
+      font-size: 20px;
+      line-height: 1.4;
+      color: rgb(76, 76, 76);    
+      position: relative;
+      padding-left: 16px;
+      padding-left: 0;
+      &::marker {
+        margin-bottom: 200px;      
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:before {      
+        flex: none;
+        content: "";
+        display: block;
+        display: none;
+        position: absolute;
+        top: 12px;
+        left: 0;      
+        width: 4px;
+        height: 4px;      
+        border-radius: 50%;
+        background-color: rgb(76, 76, 76);        
+      }
+    }
+  }
+  h3,
+  .h3 {
+    margin-bottom: 46px;
+  }
+  img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;    
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgb(76, 76, 76);
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }  
+}
+
 .instal__card-col-2,
 .instal__card-col {  
   p {
@@ -2025,13 +2085,21 @@ body {
 
 .instal__ul {
   margin-bottom: 20px;
+  list-style: outside;
+  list-style: inside;
   padding-left: 13px;
+  padding-left: 20px;
+  padding-left: 0;
   li {
     font-size: 20px;
     line-height: 1.4;
     color: rgb(76, 76, 76);    
     position: relative;
     padding-left: 16px;
+    padding-left: 0;
+    &::marker {
+      margin-bottom: 200px;      
+    }
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -2039,6 +2107,7 @@ body {
       flex: none;
       content: "";
       display: block;
+      display: none;
       position: absolute;
       top: 12px;
       left: 0;      
@@ -2050,6 +2119,7 @@ body {
   }
 }
 
+h3,
 .h3 {
   font-weight: 800;
   font-size: 36px;
@@ -2084,6 +2154,7 @@ body {
   margin-right: 38px;
 }
 
+h4,
 .h4 {
   font-weight: 800;
   font-size: 22px;
@@ -2098,6 +2169,7 @@ body {
 .instal__price-row {
   display: flex;
   margin-bottom: 155px;
+  margin-top: 80px;
 }
 
 .instal__price-col-1 {
@@ -2309,10 +2381,10 @@ body {
   align-items: center;
   justify-content: center;
   img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      } 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  } 
   &:hover {
     &:before {
       content: "";
@@ -2834,21 +2906,21 @@ body {
       border: 4px solid #42ab75;
     }
     @media (max-width : 576px) {
-    .fancybox-show-thumbs .fancybox-inner {
-      left: 110px;
-    }
-    .fancybox-thumbs__list a {
-      width: 88px;
-      height: 88px;
-    }
+      .fancybox-show-thumbs .fancybox-inner {
+        left: 110px;
+      }
+      .fancybox-thumbs__list a {
+        width: 88px;
+        height: 88px;
+      }
     }//576
     @media (max-width : 480px) {
-    .fancybox-show-thumbs .fancybox-thumbs {
-      display: none $i;
-    }
-    .fancybox-show-thumbs .fancybox-inner {
-      left: 0;
-    }
+      .fancybox-show-thumbs .fancybox-thumbs {
+        display: none $i;
+      }
+      .fancybox-show-thumbs .fancybox-inner {
+        left: 0;
+      }
     }//480
 
 //2000
@@ -3610,6 +3682,11 @@ body {
   margin-right: 0;
   width: 100%;
 }
+.instal__content img {
+  margin-right: 0 $i;
+  margin-left: 0 $i;
+}
+.instal__content img,
 .instal__card-img-w {
   max-width: 690px;
   width: 100%;
@@ -3658,6 +3735,7 @@ body {
   .instal__card-row {
     margin-bottom: 20px;
   }
+  h3,
   .h3 {
     font-size: 28px;
   }
@@ -3996,14 +4074,19 @@ body {
     .instal__card-col {
       margin-top: 32px;
     }
+    .instal__content ul li,
     .instal__price-col-1,
     .instal__ul li,
     .instal__card-col-2 p, .instal__card-col p {
       font-size: 18px;
     }
+
+
+
     .instal__card-col-2 p:not(:last-child), .instal__card-col p:not(:last-child) {
       margin-bottom: 23px;
     }
+    .instal__content ul li:not(:last-child),
     .instal__ul li:not(:last-child) {
       margin-bottom: 9.9px;
     }
@@ -4222,6 +4305,7 @@ body {
   .head__menu ul ul {
     padding-left: 15px;
   }
+  h3,
   .h3 {
     font-size: 23px;
   }

@@ -2129,6 +2129,58 @@ body.touch .sub-sub-menu__list.open {
     border-radius: 30px;
     overflow: hidden; }
 
+.instal__content ul {
+  margin-bottom: 20px;
+  list-style: outside;
+  list-style: inside;
+  padding-left: 13px;
+  padding-left: 20px;
+  padding-left: 0; }
+  .instal__content ul li {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #4c4c4c;
+    position: relative;
+    padding-left: 16px;
+    padding-left: 0; }
+    .instal__content ul li::marker {
+      margin-bottom: 200px; }
+    .instal__content ul li:not(:last-child) {
+      margin-bottom: 10px; }
+    .instal__content ul li:before {
+      -webkit-flex: none;
+          -ms-flex: none;
+              flex: none;
+      content: "";
+      display: block;
+      display: none;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #4c4c4c; }
+
+.instal__content h3,
+.instal__content .h3 {
+  margin-bottom: 46px; }
+
+.instal__content img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.instal__content p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #4c4c4c;
+  margin-bottom: 0; }
+  .instal__content p:not(:last-child) {
+    margin-bottom: 23px; }
+
 .instal__card-col-2 p,
 .instal__card-col p {
   font-size: 20px;
@@ -2144,13 +2196,20 @@ body.touch .sub-sub-menu__list.open {
 
 .instal__ul {
   margin-bottom: 20px;
-  padding-left: 13px; }
+  list-style: outside;
+  list-style: inside;
+  padding-left: 13px;
+  padding-left: 20px;
+  padding-left: 0; }
   .instal__ul li {
     font-size: 20px;
     line-height: 1.4;
     color: #4c4c4c;
     position: relative;
-    padding-left: 16px; }
+    padding-left: 16px;
+    padding-left: 0; }
+    .instal__ul li::marker {
+      margin-bottom: 200px; }
     .instal__ul li:not(:last-child) {
       margin-bottom: 10px; }
     .instal__ul li:before {
@@ -2159,6 +2218,7 @@ body.touch .sub-sub-menu__list.open {
               flex: none;
       content: "";
       display: block;
+      display: none;
       position: absolute;
       top: 12px;
       left: 0;
@@ -2167,6 +2227,7 @@ body.touch .sub-sub-menu__list.open {
       border-radius: 50%;
       background-color: #4c4c4c; }
 
+h3,
 .h3 {
   font-weight: 800;
   font-size: 36px;
@@ -2176,6 +2237,7 @@ body.touch .sub-sub-menu__list.open {
   font-style: italic;
   position: relative;
   padding-left: 16px; }
+  h3:before,
   .h3:before {
     left: 0;
     content: "";
@@ -2203,6 +2265,7 @@ body.touch .sub-sub-menu__list.open {
 .instal__card-col-2 {
   margin-right: 38px; }
 
+h4,
 .h4 {
   font-weight: 800;
   font-size: 22px;
@@ -2216,7 +2279,8 @@ body.touch .sub-sub-menu__list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 155px; }
+  margin-bottom: 155px;
+  margin-top: 80px; }
 
 .instal__price-col-1 {
   font-size: 20px;
@@ -3543,6 +3607,10 @@ body.touch .sub-sub-menu__list.open {
     margin-left: 0;
     margin-right: 0;
     width: 100%; }
+  .instal__content img {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+  .instal__content img,
   .instal__card-img-w {
     max-width: 690px;
     width: 100%; }
@@ -3585,6 +3653,7 @@ body.touch .sub-sub-menu__list.open {
     font-size: 20px; }
   .instal__card-row {
     margin-bottom: 20px; }
+  h3,
   .h3 {
     font-size: 28px; }
   .instal__card-row-2,
@@ -3831,12 +3900,14 @@ body.touch .sub-sub-menu__list.open {
     object-fit: cover; }
   .instal__card-col {
     margin-top: 32px; }
+  .instal__content ul li,
   .instal__price-col-1,
   .instal__ul li,
   .instal__card-col-2 p, .instal__card-col p {
     font-size: 18px; }
   .instal__card-col-2 p:not(:last-child), .instal__card-col p:not(:last-child) {
     margin-bottom: 23px; }
+  .instal__content ul li:not(:last-child),
   .instal__ul li:not(:last-child) {
     margin-bottom: 9.9px; }
   .instal__card-row-2 {
@@ -3978,6 +4049,7 @@ body.touch .sub-sub-menu__list.open {
     font-size: 18px; }
   .head__menu ul ul {
     padding-left: 15px; }
+  h3,
   .h3 {
     font-size: 23px; }
   .instal__card-img-w img {
